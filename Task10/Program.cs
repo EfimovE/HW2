@@ -6,5 +6,9 @@
 
 Console.WriteLine("Введите трехзначное число и нажмите Enter.");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number / 100 >= 1 && number / 100 <= 9) Console.WriteLine($"{number} -> Трехзначное число.");
+if (number / 100 >= 1 && number / 100 <= 9) 
+{
+    int ost = number % 100 / 10;
+    Console.WriteLine($"{ost}");
+}
 else Console.WriteLine($"Вы ввели не трехзначное число.");
