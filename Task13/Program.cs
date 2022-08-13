@@ -16,8 +16,8 @@ int thirdDigital (int num)
         return num % 10;
     }
 }
-Console.WriteLine("Введите число.");
+Console.WriteLine("Введите число и нажмите Enter.");
 int number = Convert.ToInt32(Console.ReadLine());
 int result = thirdDigital (number);
 string res = result == -1 ? "Третьей цифры нет." : result.ToString();
-Console.WriteLine($"{res}");
+Console.WriteLine($"{number} -> {res}");
