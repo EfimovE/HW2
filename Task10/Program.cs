@@ -9,6 +9,6 @@ int number = Convert.ToInt32(Console.ReadLine());
 if (number / 100 >= 1 && number / 100 <= 9) 
 {
     int ost = number % 100 / 10;
-    Console.WriteLine($"{ost}");
+    Console.WriteLine($"{number} -> {ost}");
 }
 else Console.WriteLine($"Вы ввели не трехзначное число.");
