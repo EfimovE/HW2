@@ -14,5 +14,5 @@ Console.WriteLine("Введите номер дня недели и нажмит
 int number = Convert.ToInt32(Console.ReadLine());
 int result = dayofWeek (number);
 if (result == 3) Console.WriteLine("Введите корректное число.");
-else if (result == 1) Console.WriteLine("Нет.");
-else if (result == 2) Console.WriteLine("Да.");
+else if (result == 1) Console.WriteLine($"{number} -> Нет.");
+else if (result == 2) Console.WriteLine($"{number} -> Да.");
